@@ -1,1 +1,360 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Študuj IST - SOŠ Sečovce</title>
 
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f5f7fa;
+      margin: 0;
+      padding: 0;
+      color: #222;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(135deg, rgb(1, 32, 144), #0050c8);
+      color: white;
+      text-align: center;
+      padding: 30px 20px 40px 20px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .header-content img {
+      height: 80px;
+      border-radius: 10px;
+      background: white;
+      padding: 5px;
+    }
+
+    nav {
+      margin-bottom: 15px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: opacity 0.3s ease;
+    }
+
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2em;
+      letter-spacing: 1px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #012090;
+      border-left: 5px solid #012090;
+      padding-left: 10px;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .images {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 30px 0;
+    }
+
+    .images img {
+      max-width: 260px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .images img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    a.school-link {
+      color: #0040a0;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a.school-link:hover {
+      text-decoration: underline;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #012090;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 10px;
+      margin-right: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #0040a0;
+    }
+
+    .subjects {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .subject {
+      flex: 1 1 200px;
+      padding: 10px;
+    }
+
+    .subject i {
+      font-size: 40px;
+      color: #012090;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: linear-gradient(135deg, #012090, #0040a0);
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #012090;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 50%;
+      text-decoration: none;
+      font-size: 18px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+      transition: background 0.3s;
+    }
+
+    .back-to-top:hover {
+      background-color: #0040a0;
+    }
+  </style>
+
+  <!-- Ikony (Font Awesome) -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="#o-odbore">O odbore</a>
+      <a href="#co-sa-naucis">Čo sa naučíš</a>
+      <a href="#viac-o-skole">Viac o škole</a>
+    </nav>
+
+    <div class="header-content">
+      <img src="https://gdusecovce.edupage.org/photos/200/1133_logo.png" alt="Logo SOŠ Sečovce" />
+      <h1>Študuj na odbore IST (Informačné a sieťové technológie)</h1>
+    </div>
+  </header>
+
+  <main>
+    <section id="o-odbore">
+      <h2>O odbore</h2>
+      <p>
+        Odbor Informačné a sieťové technológie (IST) pripravuje študentov na prácu
+        s modernými technológiami, programovaním, správou sietí a databáz. Študenti získavajú
+        praktické zručnosti potrebné pre IT sektor. Poskytovaný je aj duálny systém vzdelávania.
+      </p>
+    </section>
+
+    <section class="images">
+      <a href="https://www.python.org/" target="_blank">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Programovanie" />
+      </a>
+      <a href="https://www.cisco.com/" target="_blank">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&q=80" alt="Sieťová infraštruktúra" />
+      </a>
+    </section>
+
+    <section id="co-sa-naucis">
+      <h2>Čo sa naučíš</h2>
+      <div class="subjects">
+        <div class="subject">
+          <i class="fas fa-code"></i>
+          <p>Programovanie</p>
+        </div>
+        <div class="subject">
+          <i class="fas fa-network-wired"></i>
+          <p>Počítačové siete</p>
+        </div>
+        <div class="subject">
+          <i class="fas fa-database"></i>
+          <p>Databázy</p>
+        </div>
+        <div class="subject">
+          <i class="fas fa-shield-alt"></i>
+          <p>Kybernetická bezpečnosť</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="viac-o-skole">
+      <h2>Viac o škole</h2>
+      <p>
+        Viac informácií o škole SOŠ Sečovce nájdete na
+        <a class="school-link" href="https://gdusecovce.edupage.org/" target="_blank" rel="noopener noreferrer">
+          oficiálnej stránke SOŠ Sečovce
+        </a>.
+      </p>
+      <a class="button" href="https://gdusecovce.edupage.org/contact/" target="_blank">Kontaktujte nás</a>
+      <a class="button" href="https://gdusecovce.edupage.org/register/" target="_blank">Prihláška</a>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 SOŠ Sečovce – Odbor IST <br />
+    Simon Gočík – owner školy
+  </footer>
+
+  <a href="#" class="back-to-top">↑</a>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio - Simon Gočík </title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f5f7fa;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(135deg, #012090, #0040a0);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile {
+      text-align: center;
+    }
+
+    .profile img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .profile h2 {
+      color: #012090;
+      margin: 10px 0;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #012090;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #0040a0;
+    }
+
+    footer {
+      background: linear-gradient(135deg, #012090, #0040a0);
+      color: white;
+      text-align: center;
+      padding: 15px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Portfólio – Simon Gočík</h1>
+  </header>
+
+  <main>
+    <div class="profile">
+      <img src="https://admin2.hokejbal.sk/images/people/3044.jpg" alt="Dva.11">
+      <h2>Ahoj, som Simon 👋</h2>
+      <p>Som študent odboru Informačné a sieťové technológie na SOŠ Sečovce. Baví ma programovanie, správa sietí a tvorba webov. Rád sa učím nové technológie a pracujem na vlastných projektoch.</p>
+
+      <a class="button" href="https://github.com/" target="_blank">Môj GitHub</a>
+      <a class="button" href="index.html">Späť na hlavnú stránku</a>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Gočík – Portfólio študenta SOŠ Sečovce
+  </footer>
+</body>
+</html>
